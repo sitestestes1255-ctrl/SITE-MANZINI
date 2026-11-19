@@ -129,3 +129,30 @@ body {
     perspective: 700px;
   }
 }
+
+
+@keyframes heroPhotoReveal {
+  from {
+    opacity: 0.7;
+    transform: scale(1.08);
+    filter: brightness(0.75);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+.hero-photo-enter {
+  animation: heroPhotoReveal 1.5s cubic-bezier(0.2, 0.7, 0.25, 1) both;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-enter {
+    animation: none;
+    transform: none;
+    filter: none;
+  }
+}
