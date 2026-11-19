@@ -39,7 +39,7 @@ export default function About() {
                   className="w-full object-cover aspect-[4/3]"
                 />
               </div>
-              <div className="absolute -bottom-8 -right-4 sm:right-8 hidden sm:block w-2/5 overflow-hidden rounded-sm border-4 border-steel-900 shadow-2xl shadow-black/50">
+              <div className="relative mt-3 ml-auto w-3/5 overflow-hidden rounded-sm border-4 border-steel-900 shadow-2xl shadow-black/50 sm:absolute sm:-bottom-8 sm:-right-4 sm:mt-0 sm:ml-0 sm:w-2/5 sm:right-8">
                 <img
                   src={IMAGE_2}
                   alt="Motor aberto em manutenção"
