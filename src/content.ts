@@ -120,7 +120,7 @@ export const vehicles = [
   { name: "Carretas", description: "Estruturais, adaptações e mecânica pesada." },
 ];
 
-export const brands = ["Scania", "Volvo", "Mercedes-Benz", "Iveco"];
+export const brands = ["Scania", "Volvo", "Mercedes-Benz", "Iveco", "Volkswagen"];
 
 export const navItems = [
   { label: "Início", href: "#inicio" },
