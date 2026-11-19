@@ -175,3 +175,45 @@ body {
     filter: none;
   }
 }
+
+/* Fumaça suave ao redor do cubo giratório */
+.cube-scene {
+  position: relative;
+  isolation: isolate;
+}
+
+.cube-scene::before,
+.cube-scene::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  width: 58%;
+  height: 56%;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 70%, rgba(214, 220, 226, 0.24), rgba(178, 187, 196, 0.12) 38%, transparent 72%);
+  filter: blur(18px);
+  transform: translateX(-50%);
+  animation: cubeSmoke 5.8s ease-in-out infinite;
+}
+
+.cube-scene::after {
+  width: 42%;
+  height: 48%;
+  bottom: 14%;
+  background: radial-gradient(ellipse at 50% 70%, rgba(238, 241, 244, 0.2), rgba(190, 198, 206, 0.1) 42%, transparent 72%);
+  filter: blur(22px);
+  animation: cubeSmoke 7.2s ease-in-out -2.8s infinite reverse;
+}
+
+@keyframes cubeSmoke {
+  0%, 100% { opacity: 0.32; transform: translate(-50%, 8px) scale(0.78); }
+  50% { opacity: 0.72; transform: translate(-50%, -16px) scale(1.12); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cube-scene::before,
+  .cube-scene::after { animation: none; }
+}
