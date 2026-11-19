@@ -120,3 +120,12 @@ body {
   background: var(--accent);
   color: #0d0f11;
 }
+
+
+@media (max-width: 639px) {
+  .cube-scene {
+    width: 140px;
+    height: 140px;
+    perspective: 700px;
+  }
+}
