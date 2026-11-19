@@ -28,8 +28,8 @@ export default function Hero() {
           </div>
 
           <h1
-            className="animate-fade-up is-visible font-display mt-6 font-extrabold uppercase leading-[0.95] text-white"
-            style={{ animationDelay: "100ms" }}
+            className="hero-title-enter font-display mt-6 font-extrabold uppercase leading-[0.95] text-white"
+            style={{ animationDelay: "350ms" }}
           >
             <span className="flex items-center gap-4 sm:gap-6">
               <img
