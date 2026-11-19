@@ -266,3 +266,13 @@ body {
   .cube-scene::before,
   .cube-scene::after { animation: none; opacity: 0.55; }
 }
+
+/* Mantém o cubo centralizado durante toda a rotação */
+@keyframes cubeSpin {
+  from { transform: translate(-50%, -50%) rotateX(-12deg) rotateY(0deg); }
+  to { transform: translate(-50%, -50%) rotateX(-12deg) rotateY(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cube { transform: translate(-50%, -50%) rotateX(-12deg) rotateY(24deg); }
+}
