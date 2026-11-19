@@ -133,9 +133,9 @@ body {
 
 @keyframes heroPhotoReveal {
   from {
-    opacity: 0.7;
-    transform: scale(1.08);
-    filter: brightness(0.75);
+    opacity: 0.45;
+    transform: scale(1.22);
+    filter: brightness(0.55);
   }
   to {
     opacity: 1;
@@ -145,12 +145,31 @@ body {
 }
 
 .hero-photo-enter {
-  animation: heroPhotoReveal 1.5s cubic-bezier(0.2, 0.7, 0.25, 1) both;
+  animation: heroPhotoReveal 2.4s cubic-bezier(0.2, 0.7, 0.25, 1) both;
   transform-origin: center;
 }
 
+@keyframes heroTitleEnter {
+  from {
+    opacity: 0;
+    transform: translateY(42px) scale(0.94);
+    filter: blur(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.hero-title-enter {
+  animation: heroTitleEnter 1.15s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: opacity, transform, filter;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .hero-photo-enter {
+  .hero-photo-enter,
+  .hero-title-enter {
     animation: none;
     transform: none;
     filter: none;
