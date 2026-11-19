@@ -11,11 +11,11 @@ export default function Hero() {
         <img
           src={HERO_IMAGE}
           alt="Fachada da Oficina Manzini Mecânica & Solda"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[68%_center] sm:object-center"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-steel-950/90 via-steel-950/60 to-steel-950/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-steel-950 via-transparent to-steel-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-steel-950/60 via-steel-950/35 to-steel-950/10 sm:from-steel-950/90 sm:via-steel-950/60 sm:to-steel-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-steel-950/80 via-transparent to-steel-950/20 sm:from-steel-950 sm:to-steel-950/40" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 pb-20 w-full">
@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute right-8 xl:right-24 top-1/2 -translate-y-1/2 z-10">
+        <div className="relative z-10 mt-14 flex justify-center lg:absolute lg:right-8 xl:right-24 lg:top-1/2 lg:mt-0 lg:-translate-y-1/2">
           <RotatingCube />
         </div>
       </div>
