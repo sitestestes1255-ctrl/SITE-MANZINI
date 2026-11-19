@@ -39,7 +39,7 @@ export const site = {
     "Oficina mecânica especializada em veículos pesados e utilitários, atendendo motoristas, frotistas e transportadores de Capivari e região.",
     "Trabalhamos com serviços mecânicos, estruturais e adaptações para caminhões, carretas, ônibus, caminhonetes e vans — sempre com foco em segurança, durabilidade e solução definitiva para o seu veículo.",
     // Espaço reservado: substitua pelo texto real da empresa.
-    "[Espaço reservado — adicione aqui a história da oficina, tempo de mercado, equipe e certificações.]",
+    "Também cuidamos da manutenção de freios e motores, fazemos troca de óleo e de kits e componentes, alongamento de chassis e soldas em inox, aço e alumínio. Atendemos ainda outros serviços de mecânica para caminhões e veículos pesados.",
   ],
 
   // ─── Editar: estatísticas em destaque ─────────────────────────
