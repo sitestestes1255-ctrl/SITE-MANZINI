@@ -3,10 +3,8 @@ import Reveal from "@/components/Reveal";
 import { site } from "@/content";
 import { ShieldCheck, Hammer, Users } from "lucide-react";
 
-const IMAGE_1 =
-  "https://images.pexels.com/photos/7564861/pexels-photo-7564861.jpeg?auto=compress&cs=tinysrgb&w=900";
-const IMAGE_2 =
-  "https://images.pexels.com/photos/6720532/pexels-photo-6720532.jpeg?auto=compress&cs=tinysrgb&w=900";
+const IMAGE_1 = "/images/WhatsApp Image 2026-11-12 at 18.04.07.jpeg";
+const IMAGE_2 = "/images/WhatsApp Image 2026-11-12 at 18.04.01.jpeg";
 
 const pillars = [
   {
@@ -36,7 +34,7 @@ export default function About() {
               <div className="float-3d overflow-hidden rounded-sm border border-steel-700">
                 <img
                   src={IMAGE_1}
-                  alt="Mecânico trabalhando em motor de caminhão"
+                  alt="Caminhão vermelho na oficina Manzini"
                   loading="lazy"
                   className="w-full object-cover aspect-[4/3]"
                 />
@@ -44,7 +42,7 @@ export default function About() {
               <div className="absolute -bottom-8 -right-4 sm:right-8 hidden sm:block w-2/5 overflow-hidden rounded-sm border-4 border-steel-900 shadow-2xl shadow-black/50">
                 <img
                   src={IMAGE_2}
-                  alt="Mecânico em oficina de veículos pesados"
+                  alt="Motor aberto em manutenção"
                   loading="lazy"
                   className="w-full object-cover aspect-square"
                 />
