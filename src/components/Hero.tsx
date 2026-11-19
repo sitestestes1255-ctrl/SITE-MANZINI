@@ -11,7 +11,7 @@ export default function Hero() {
         <img
           src={HERO_IMAGE}
           alt="Fachada da Oficina Manzini Mecânica & Solda"
-          className="h-full w-full object-cover object-[68%_center] sm:object-center"
+          className="h-full w-full object-cover object-[68%_center] sm:object-center hero-photo-enter"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-steel-950/60 via-steel-950/35 to-steel-950/10 sm:from-steel-950/90 sm:via-steel-950/60 sm:to-steel-950/20" />
