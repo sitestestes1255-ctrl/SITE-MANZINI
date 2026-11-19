@@ -6,11 +6,11 @@ import { Truck, Pickaxe, Bus, Car, Container, type LucideIcon } from "lucide-rea
 const icons: LucideIcon[] = [Truck, Pickaxe, Car, Bus, Container];
 
 const VEHICLE_IMAGES = [
-  "https://images.pexels.com/photos/6720519/pexels-photo-6720519.jpeg?auto=compress&cs=tinysrgb&w=900",
-  "https://images.pexels.com/photos/7018493/pexels-photo-7018493.jpeg?auto=compress&cs=tinysrgb&w=900",
-  "https://images.pexels.com/photos/6720501/pexels-photo-6720501.jpeg?auto=compress&cs=tinysrgb&w=900",
-  "https://images.pexels.com/photos/9716368/pexels-photo-9716368.jpeg?auto=compress&cs=tinysrgb&w=900",
-  "https://images.pexels.com/photos/34875545/pexels-photo-34875545.jpeg?auto=compress&cs=tinysrgb&w=900",
+  "/images/veiculo-caminhao.jpeg",
+  "/images/veiculo-caminhonete-a.jpeg",
+  "/images/veiculo-van.jpeg",
+  "/images/veiculo-onibus.jpeg",
+  "/images/veiculo-carreta.jpeg",
 ];
 
 export default function Vehicles() {
