@@ -11,7 +11,7 @@ const faces = [
 
 export default function RotatingCube() {
   return (
-    <div className="cube-scene hidden lg:block" aria-hidden="true">
+    <div className="cube-scene block" aria-hidden="true">
       <div className="cube">
         {faces.map((transform, i) => (
           <div key={i} className="cube-face" style={{ transform }}>
