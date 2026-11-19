@@ -2,7 +2,7 @@ import { ChevronDown, MessageCircle, Wrench } from "lucide-react";
 import { site, whatsappUrl } from "@/content";
 import RotatingCube from "@/components/RotatingCube";
 
-const HERO_IMAGE = "/images/topo-hero.jpg";
+const HERO_IMAGE = "/images/fachada.jpg";
 
 export default function Hero() {
   return (
